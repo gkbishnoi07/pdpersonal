@@ -26,6 +26,15 @@ body:
       ````
   validations:
     required: true
+- type: textarea
+  attributes:
+    label: 📹 Screen Recording
+    description: |
+      If possible, please provide a link to a screen recording of the bug or the solution you implemented. 
+
+      You can upload the recording to a platform like Google Drive, YouTube, Dropbox, etc., and paste the link here.
+    placeholder: |
+      Example: https://drive.google.com/your-screen-recording-link
 - type: markdown
   attributes:
     value: >
