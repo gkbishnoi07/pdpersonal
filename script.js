@@ -108,3 +108,12 @@ togglePasswordVisibilityIcon.addEventListener('click', function () {
     togglePasswordVisibilityIcon.classList.add('fa-eye');
   }
 });
+
+darkBtn.onclick=function(){
+  document.body.classList.toggle('darkTheme');
+  if (document.body.classList.contains('darkTheme')) {
+    darkBtn.textContent = 'Light Mode';
+  } else {
+    darkBtn.textContent = 'Dark Mode';
+}
+}
