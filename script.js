@@ -109,11 +109,11 @@ togglePasswordVisibilityIcon.addEventListener('click', function () {
   }
 });
 
-darkbtn.onclick=function(){
-  document.body.classList.toggle('darktheme');
-  if (document.body.classList.contains('darktheme')) {
-    darkbtn.textContent = 'Light Mode';
+darkBtn.onclick=function(){
+  document.body.classList.toggle('darkTheme');
+  if (document.body.classList.contains('darkTheme')) {
+    darkBtn.textContent = 'Light Mode';
   } else {
-    darkbtn.textContent = 'Dark Mode';
+    darkBtn.textContent = 'Dark Mode';
 }
 }

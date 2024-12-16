@@ -62,13 +62,6 @@ body {
    
   }
 
-/*   
-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-} */
 
 button.editbtn {
   background-color: #4caf50;
@@ -95,7 +88,7 @@ button.deletebtn {
   --secondary-color:#4caf50;
   --tertiary-color:black;
 }
-.darktheme{
+.darkTheme{
   --primary-color:black;
   --secondary-color:grey;
   --tertiary-color:white;
@@ -104,15 +97,12 @@ h2{
   color:var(--tertiary-color)
 }
 
-#darkbtn{
+#darkBtn{
   background-color: #fff;
   color:rgb(86, 66, 164);
   text-decoration: underline;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  /* padding: 10px; */
-  /* margin-bottom: 5px; */
-  /* border: 1px solid #ddd; */
-  /* border-radius: 5px; */
+
 }
 
