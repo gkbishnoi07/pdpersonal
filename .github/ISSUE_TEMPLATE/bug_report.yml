@@ -6,11 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report a bug in the Oppia project.
+        Thanks for taking the time to report a bug in the  project.
   - type: markdown
     attributes:
       value: |
-        Before filing a new issue, **please do a quick search** to check that it hasn't already been filed on the issue tracker. You can do this by going to [this link](https://github.com/oppia/oppia/issues) and typing some words related to the issue in the search box next to the "New issue" button.
+        Before filing a new issue, **please do a quick search** to check that it hasn't already been filed on the issue tracker. You can do this by going to [this link](https://github.com///issues) and typing some words related to the issue in the search box next to the "New issue" button.
   - type: textarea
     attributes:
       label: Describe the bug
@@ -108,10 +108,10 @@ body:
       label: Tips for developers
       description: Please leave this section as-is.
       value: |
-        Before addressing the bug, please identify which PR caused the issue (you can follow the steps [here](https://github.com/oppia/oppia/wiki/How-to-find-the-commit-which-introduced-a-bug)). If you identify the PR, comment on the issue with a link to it. If not, mention the commit hash of the oldest commit you saw the bug on (and the month and year it was made in).
+        Before addressing the bug, please identify which PR caused the issue (you can follow the steps [here](https://github.com///wiki/How-to-find-the-commit-which-introduced-a-bug)). If you identify the PR, comment on the issue with a link to it. If not, mention the commit hash of the oldest commit you saw the bug on (and the month and year it was made in).
 
-        Then, please leave a comment with details of the approach that you plan to take to fix the issue (see [example](https://github.com/oppia/oppia/issues/19157#issuecomment-1858788463)).
+        Then, please leave a comment with details of the approach that you plan to take to fix the issue (see [example](https://github.com///issues/19157#issuecomment-1858788463)).
 
-        **Note:** If this is your first Oppia issue, please make sure to follow our guidelines for [choosing an issue](https://github.com/oppia/oppia/wiki/Contributing-code-to-Oppia#choosing-a-good-first-issue) and [setting things up](https://github.com/oppia/oppia/wiki/Contributing-code-to-Oppia#setting-things-up). You will also need to show a demo of the fix working correctly on your local machine. Thanks!
+        **Note:** If this is your first  issue, please make sure to follow our guidelines for [choosing an issue](https://github.com///wiki/Contributing-code-to-#choosing-a-good-first-issue) and [setting things up](https://github.com///wiki/Contributing-code-to-#setting-things-up). You will also need to show a demo of the fix working correctly on your local machine. Thanks!
     validations:
       required: true
