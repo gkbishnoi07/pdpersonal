@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--primary-color);
   }
   
   header {
-    background-color: #4CAF50;
+    background-color:var(--secondary-color);
     color: white;
     padding: 20px;
     text-align: center;
@@ -38,14 +38,14 @@ body {
   
   button {
     padding: 10px 15px;
-    background-color: #4CAF50;
+    background-color: var(--secondary-color);
     color: white;
     border: none;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #45a049;
+   transition: scale(1.2);
   }
   
   ul {
@@ -59,20 +59,25 @@ body {
     margin-bottom: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
+   
   }
 
-  
+/*   
 button {
   padding: 5px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
+} */
 
 button.editbtn {
   background-color: #4caf50;
   color: white;
   float: right;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button.deletebtn {
@@ -80,4 +85,34 @@ button.deletebtn {
   color: white;
   float: right;
   margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+:root{
+  --primary-color:white;
+  --secondary-color:#4caf50;
+  --tertiary-color:black;
+}
+.darktheme{
+  --primary-color:black;
+  --secondary-color:grey;
+  --tertiary-color:white;
+}
+h2{
+  color:var(--tertiary-color)
+}
+
+#darkbtn{
+  background-color: #fff;
+  color:rgb(86, 66, 164);
+  text-decoration: underline;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  /* padding: 10px; */
+  /* margin-bottom: 5px; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 5px; */
+}
+
