@@ -71,7 +71,52 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
     }
   });
 
-  // You can later add functionality for fetching weather from an API, etc.
+// Fetch weather data
+const apiKey = "8d7f06c63a938d6807354a852e8f4f0f";
+
+document.getElementById('fetch-weather-btn').addEventListener('click', function() {
+    const cityInput = document.getElementById('city-input');
+    if (cityInput.value.trim() !== "") {
+        fetchWeather(cityInput.value);
+    }
+});
+
+function fetchWeather(city) {
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`City not found: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            displayWeather(data);
+        })
+        .catch(error => {
+            console.error('Error fetching weather:', error);
+            displayError();
+        });
+}
+
+function displayWeather(data) {
+    const weatherContainer = document.getElementById('weather-container');
+    weatherContainer.innerHTML = `
+        <h3>Weather in ${data.name}</h3>
+        <p>Temperature: ${data.main.temp}°C</p>
+        <p>Condition: ${data.weather[0].description}</p>
+    `;
+}
+
+function displayError() {
+    const weatherContainer = document.getElementById('weather-container');
+    weatherContainer.innerHTML = `
+        <p style="color: red;">Error: Unable to fetch weather data. Please check the city name and try again.</p>
+    `;
+}
+
+
    
   // delete button functionality
   function deletebtn(element) {
@@ -94,8 +139,7 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
       }
     });
   }
-
-const passwordInput = document.getElementById('password-input');
+  const passwordInput = document.getElementById('password-input');
 const togglePasswordVisibilityIcon = document.querySelector('[data-toggle-password]');
 togglePasswordVisibilityIcon.addEventListener('click', function () {
   if (passwordInput.type === 'password') {
